@@ -1,0 +1,141 @@
+# ChromaDB persistence path
+chroma_data/
+
+# SQLite database
+db.sqlite3
+*.sqlite3
+
+# Migration files (keep __init__.py)
+*/migrations/0*.py
+*/migrations/0*.pyc
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# OS generated files
+.DS_Store 
+
+# WHIRL - Git Ignore File
+
+# Frontend (Next.js) specific
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.vercel
+.turbo
+
+# Backend (Django) specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+celerybeat-schedule
+local_settings.py
+
+# Database files
+*.sqlite3
+*.sqlite3-journal
+*.db
+db.sqlite3
+
+# Django migrations (keep __init__.py)
+*/migrations/0*.py
+*/migrations/0*.pyc
+
+# RAG/ML specific
+backend/rag/chroma_db/
+backend/fine-tuned-model/
+*.bin
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.safetensors
+
+# Environment variables and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+backend/llm_service/.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test cache
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+
+# Temporary files
+.tmp/
+.temp/
+tmp/
+temp/
+*.bak
+
+# Personal notes or local files
+TODO
+NOTES.md
+local-dev/
+
+# Data files
+/data/
+/uploads/
+/backend/data/
+public/uploads/
+
+# Certificates and keys
+*.pem
+*.key
+*.crt 

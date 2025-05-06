@@ -1,0 +1,35 @@
+# Django Core
+django
+djangorestframework
+python-dotenv
+psycopg2-binary # For PostgreSQL (even if using SQLite now, good to have)
+gunicorn # Common production WSGI server
+
+# Authentication
+djangorestframework-simplejwt
+
+# CORS
+django-cors-headers
+
+# RAG & ML Dependencies
+torch # PyTorch core
+transformers # HuggingFace Transformers (LLM, Tokenizers)
+accelerate # For efficient model loading/distribution
+bitsandbytes # For quantization
+sentence-transformers # Often used for embeddings, includes CrossEncoder for reranking
+langchain
+langchain-community
+langchain-huggingface # For HF embeddings integration
+chromadb # Vector store client
+spacy==3.7.5 # Pin spacy version
+thinc==8.2.5 # Pin thinc version
+scispacy # Need this for scispaCy models
+rank_bm25 # For BM25 keyword search
+rapidfuzz # For fuzzy string matching (used in RAGBot._is_greeting)
+
+# HTTP Client (if calling external services like separate LLM/RAG server)
+httpx
+
+# Need to install spacy models separately, e.g.:
+# python -m spacy download en_core_web_sm
+# python -m spacy download en_core_sci_lg # Used in embeddings.py
