@@ -69,6 +69,7 @@ db.sqlite3
 
 # RAG/ML specific
 backend/rag/chroma_db/
+backend/rag/chunks/
 backend/fine-tuned-model/
 *.bin
 *.pt
